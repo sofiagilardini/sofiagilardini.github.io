@@ -1,9 +1,10 @@
 /* Reset default margin and padding for body */
 body {
-  margin: 0;
-  padding: 0;
+  margin: 5%;
+  padding: 2%;
   background-color: rgb(0, 0, 0); /* Set background color for the entire body */
   font-family: Arial, sans-serif; /* You can specify a preferred font family here */
+  text-align: center; /* Center align text */
 }
 
 /* Style for h1 elements */
