@@ -8,7 +8,7 @@ body {
 
 /* Style for h1 elements */
 h1 {
-  color: rgb(144, 173, 215);
+  color: rgb(228, 133, 85);
   text-align: center; /* Center align h1 text */
 }
 
@@ -21,8 +21,8 @@ p {
 /* Container for image */
 .container {
   position: relative;
-  width: 20%;
-  height: 20vh; /* This ensures the container takes the full height of the viewport */
+  width: 10%;
+  height: 10vh; /* This ensures the container takes the full height of the viewport */
 }
 
 /* Style for the image */
