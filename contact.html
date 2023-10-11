@@ -5,6 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Quiz App</title>
+        <style>
+        /* Set the text color to white for labels associated with radio buttons */
+        label {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz: Who Are You?</h1>
+
+    <form id="quizForm">
+        <p>What color are your eyes?</p>
+        <label><input type="radio" name="eyes" value="blue"> Blue</label>
+        <label><input type="radio" name="eyes" value="green"> Green</label>
+
+        <p>What color is your hair?</p>
+        <label><input type="radio" name="hair" value="blonde"> Blonde</label>
+        <label><input type="radio" name="hair" value="brunette"> Brunette</label>
+
+        <button type="button" onclick="calculateResult()">Submit</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        function calculateResult() {
+            const eyes = document.querySelector('input[name="eyes"]:checked');
+            const hair = document.querySelector('input[name="hair"]:checked');
+            const resultElement = document.getElementById('result');
+
+            if (eyes && hair) {
+                if (eyes.value === 'blue' && hair.value === 'blonde') {
+                    resultElement.innerHTML = "You are Sofia!";
+                } else {
+                    resultElement.innerHTML = "You are not quite Sofia.";
+                }
+            } else {
+                resultElement.innerHTML = "Please answer all questions.";
+            }
+        }
+    </script>
+</body>
+</html>
+In this updated code, I added CSS to set the text color to white for the labels associated with the radio buttons. This should make the text inside the radio buttons appear as white.
+
+
+
+
+
+
 </head>
 <body>
     <h1>Quiz: Who Are You?</h1>
