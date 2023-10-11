@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Quiz</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+        .question-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            margin: 20px auto;
+            width: 60%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-container" id="question1">
+        <h1>Question 1</h1>
+        <p>What is your favorite color?</p>
+        <button onclick="nextQuestion('red')">Red</button>
+        <button onclick="nextQuestion('blue')">Blue</button>
+    </div>
+
+    <div class="question-container" id="question2" style="display: none;">
+        <h1>Question 2</h1>
+        <p>What is your favorite animal?</p>
+        <button onclick="nextQuestion('dog')">Dog</button>
+        <button onclick="nextQuestion('cat')">Cat</button>
+    </div>
+
+    <div class="question-container" id="result" style="display: none;">
+        <h1>Result</h1>
+        <p id="finalResult"></p>
+    </div>
+
+    <script>
+        let answers = [];
+
+        function nextQuestion(answer) {
+            answers.push(answer);
+
+            if (answers.length === 1) {
+                document.getElementById('question1').style.display = 'none';
+                document.getElementById('question2').style.display = 'block';
+            } else {
+                // Calculate and display the result based on collected answers
+                const finalResult = calculateResult(answers);
+                document.getElementById('question2').style.display = 'none';
+                document.getElementById('result').style.display = 'block';
+                document.getElementById('finalResult').textContent = finalResult;
+            }
+        }
+
+        function calculateResult(answers) {
+            // You can define your logic here to determine the result based on answers.
+            // This is a simplified example:
+            if (answers[0] === 'red' && answers[1] === 'dog') {
+                return 'You are a Red Dog Lover!';
+            } else if (answers[0] === 'blue' && answers[1] === 'cat') {
+                return 'You are a Blue Cat Lover!';
+            } else {
+                return 'Your result is not recognized.';
+            }
+        }
+    </script>
+</body>
+</html>
