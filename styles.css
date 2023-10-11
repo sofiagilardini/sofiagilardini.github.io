@@ -2,20 +2,20 @@
 body {
   margin: 5%;
   padding: 2%;
-  background-color: rgb(0,0,0); /* Set background color for the entire body */
+  background-color: rgb(255, 255, 255); /* Set background color for the entire body */
   font-family: Arial, sans-serif; /* You can specify a preferred font family here */
   text-align: center; /* Center align text */
 }
 
 /* Style for h1 elements */
 h1 {
-  color: rgb(228, 133, 85);
+  color: rgb(196, 106, 62);
   text-align: center; /* Center align h1 text */
 }
 
 /* Style for p elements */
 p {
-  color: rgb(255, 255, 255);
+  color: rgb(12, 8, 8);
   text-align: left; /* Adjust text alignment for p elements as needed */
 }
 
