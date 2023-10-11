@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Quiz App</title>
-        <style>
-        /* Set the text color to white for labels associated with radio buttons */
-        label {
-            color: black;
+    <style>
+        /* Style radio buttons to appear as white */
+        input[type="radio"] {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 50%;
         }
 
-                /* Set the text color to white for the resultElement */
+        /* Set the text color to white for labels associated with radio buttons */
+        label {
+            color: white;
+        }
+
+        /* Set the text color to white for the resultElement */
         #result {
-            color: black;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <h1>Quiz: Are you Maddy or Sofia?</h1>
+    <h1>Quiz: Who Are You?</h1>
 
     <form id="quizForm">
         <p>What color are your eyes?</p>
@@ -35,26 +46,14 @@
     <div id="result"></div>
 
     <script>
-        function askFollowUpQuestion() {
+        function calculateResult() {
             const eyes = document.querySelector('input[name="eyes"]:checked');
             const hair = document.querySelector('input[name="hair"]:checked');
             const resultElement = document.getElementById('result');
 
             if (eyes && hair) {
                 if (eyes.value === 'blue' && hair.value === 'blonde') {
-                    // Ask a follow-up question for blue eyes and blonde hair
-                    resultElement.innerHTML = "What do you study?";
-                    // Modify the button function for the follow-up question
-                    document.querySelector('button').onclick = function() {
-                        const preference = prompt("Study: (Biomed / Engineering):");
-                        if (preference === "Biomed") {
-                            resultElement.innerHTML = "You are Maddy!";
-                        } else if (preference === "Engineering") {
-                            resultElement.innerHTML = "You are Sofia!";
-                        } else {
-                            resultElement.innerHTML = "Your preference is not recognized.";
-                        }
-                    };
+                    resultElement.innerHTML = "You are Sofia!";
                 } else {
                     resultElement.innerHTML = "You are not quite Sofia.";
                 }
@@ -65,5 +64,3 @@
     </script>
 </body>
 </html>
-
-
