@@ -35,14 +35,26 @@
     <div id="result"></div>
 
     <script>
-        function calculateResult() {
+        function askFollowUpQuestion() {
             const eyes = document.querySelector('input[name="eyes"]:checked');
             const hair = document.querySelector('input[name="hair"]:checked');
             const resultElement = document.getElementById('result');
 
             if (eyes && hair) {
                 if (eyes.value === 'blue' && hair.value === 'blonde') {
-                    resultElement.innerHTML = "You are Sofia!";
+                    // Ask a follow-up question for blue eyes and blonde hair
+                    resultElement.innerHTML = "What do you study?";
+                    // Modify the button function for the follow-up question
+                    document.querySelector('button').onclick = function() {
+                        const preference = prompt("Study: (Biomed / Engineering):");
+                        if (preference === "Biomed") {
+                            resultElement.innerHTML = "You are Maddy!";
+                        } else if (preference === "Engineering") {
+                            resultElement.innerHTML = "You are Sofia!";
+                        } else {
+                            resultElement.innerHTML = "Your preference is not recognized.";
+                        }
+                    };
                 } else {
                     resultElement.innerHTML = "You are not quite Sofia.";
                 }
@@ -53,4 +65,5 @@
     </script>
 </body>
 </html>
+
 
