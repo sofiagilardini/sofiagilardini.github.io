@@ -12,7 +12,7 @@
         }
         header {
             background-color: #000; /* Black header background */
-            color: #db641c; /* Orange header text */
+            color: #ffffff; /* Orange header text */
             padding: 20px 0;
             text-align: center;
         }
@@ -41,7 +41,6 @@
             max-width: 100%;
             height: auto;
         }
-        /* Add more styles as needed for arrows or navigation dots */
         section {
             max-width: 800px;
             margin: 0 auto;
@@ -72,23 +71,22 @@
     </header>
     <div class="slideshow-container">
         <img class="slideshow-image" src="logo_square.png" alt="Image 1 Description">
-        <img class="slideshow-image" src="./photos_slideshow/group_selfie_bayes.jpg" alt="Image 2 Description" width="50%" height="50%">
-        <img class="slideshow-image" src="./photos_slideshow/printer_motor_1.jpg" alt="Image 3 Description" width="50%" height="50%">
-        <img class="slideshow-image" src="./photos_slideshow/selfie_bayes_1.jpg" alt="Image 3 Description" width="50%" height="50%">
-        <img class="slideshow-image" src="./photos_slideshow/selfie_printer_1.jpg" alt="Image 3 Description" width="50%" height="50%">
+        <img class="slideshow-image" src="./photos_slideshow/group_selfie_bayes.jpg" alt="Image 2 Description" width="35%" height="50%">
+        <img class="slideshow-image" src="./photos_slideshow/printer_motor_1.jpg" alt="Image 3 Description" width="35%" height="40%">
+        <img class="slideshow-image" src="./photos_slideshow/selfie_bayes_1.jpg" alt="Image 3 Description" width="35%" height="40%">
+        <img class="slideshow-image" src="./photos_slideshow/selfie_printer_1.jpg" alt="Image 3 Description" width="35%" height="40%">
 
-        <!-- Add more images for the slideshow as needed -->
     </div>
     <section>
         <h2>Who We Are</h2>
         <p>Welcome to Not Rubbish Robotics - where innovation meets sustainability. We are dedicated to creating eco-friendly robotic solutions.</p>
-        <img src="logo_square.png" alt="Image 1 Description">
+        <img src="./photos_slideshow/printer_motor_1.jpg" alt="Image 1 Description">
         <p>Our mission is to revolutionize the robotics industry and make a positive impact on the environment.</p>
-        <img src="logo_square.png" alt="Image 2 Description">
+        <img src="./photos_slideshow/example_CAD.png" alt="Image 2 Description">
         <p>Join us in our journey towards a greener and more sustainable future with cutting-edge robotics technology.</p>
     </section>
 
-    <!-- JavaScript for the slideshow (place it at the end of the body for better performance) -->
+    <!-- JavaScript for the slideshow-->
     <script>
         let slideIndex = 0;
 
@@ -106,7 +104,7 @@
             }
 
             slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 1500); // Change image every 3 seconds (adjust as needed)
+            setTimeout(showSlides, 3000);
         }
 
         showSlides();
