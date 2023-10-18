@@ -6,7 +6,7 @@
         body {
             background-color: #FFA500; /* Orange color */
             color: #000; /* Black text */
-            font-family: 'Inter', sans-serif; /* Use 'Inter' or a suitable font */
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
@@ -20,28 +20,17 @@
             max-width: 200px; /* Adjust the size as needed */
         }
         nav {
-            background-color: #000; /* Black menu background */
+            text-align: center;
         }
         nav a {
             text-decoration: none;
-            color: #FFA500; /* Orange menu text */
+            color: #FFA500;
             margin: 15px;
             font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
         }
-        .slideshow-container {
-            position: relative;
-            max-width: 100%;
-            margin: 0 auto;
-        }
-        .slideshow-image {
-            display: none;
-            max-width: 100%;
-            height: auto;
-        }
-        /* Add more styles as needed for arrows or navigation dots */
         section {
             max-width: 800px;
             margin: 0 auto;
@@ -63,50 +52,22 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="logo-placeholder.png" alt="Not Rubbish Robotics Logo">
+        <img class="logo" src="logo_square.png" alt="Not Rubbish Robotics Logo">
         <h1>Welcome to Not Rubbish Robotics</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="instructions.html">Instructions</a>
+    
         </nav>
     </header>
-    <div class="slideshow-container">
-        <img class="slideshow-image" src="image1.jpg" alt="Image 1 Description">
-        <img class="slideshow-image" src="image2.jpg" alt="Image 2 Description">
-        <img class="slideshow-image" src="image3.jpg" alt="Image 3 Description">
-        <!-- Add more images for the slideshow as needed -->
-    </div>
+
     <section>
         <h2>Who We Are</h2>
         <p>Welcome to Not Rubbish Robotics - where innovation meets sustainability. We are dedicated to creating eco-friendly robotic solutions.</p>
-        <img src="your-image1.jpg" alt="Image 1 Description">
+        <img src="./flowchart/characterisation_flowchart_example.jpg" alt="Image 1 Description">
         <p>Our mission is to revolutionize the robotics industry and make a positive impact on the environment.</p>
-        <img src="your-image2.jpg" alt="Image 2 Description">
+        <img src="./flowchart/characterisation_flowchart_example.jpg" alt="Image 2 Description">
         <p>Join us in our journey towards a greener and more sustainable future with cutting-edge robotics technology.</p>
     </section>
-
-    <!-- JavaScript for the slideshow (place it at the end of the body for better performance) -->
-    <script>
-        let slideIndex = 0;
-
-        function showSlides() {
-            let i;
-            const slides = document.getElementsByClassName("slideshow-image");
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
-            }
-
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 3000); // Change image every 3 seconds (adjust as needed)
-        }
-
-        showSlides();
-    </script>
 </body>
 </html>
