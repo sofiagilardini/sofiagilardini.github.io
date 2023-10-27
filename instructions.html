@@ -3,28 +3,6 @@
 <head>
     <title>Not Rubbish Robotics</title>
     <style>
-
-        .dropdown {
-            position: fixed;
-            right: 10px;
-            top: 10px;
-            z-index: 1;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            padding: 12px;
-            border: 1px solid #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
         body {
             background-color: #db641c; /* Orange color */
             color: #000; /* Black text */
@@ -55,6 +33,24 @@
         nav a:hover {
             text-decoration: underline;
         }
+        .dropdown {
+            position: fixed;
+            right: 30px;
+            top: 30px;
+            z-index: 1;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
         /* Add more styles as needed for arrows or navigation dots */
         section {
             max-width: 800px;
@@ -75,7 +71,6 @@
             display: block;
             margin: 20px auto;
         }
-        
         button {
             background-color: #f3f0e7;
             color: #000;
@@ -85,14 +80,29 @@
             cursor: pointer;
             font-size: 18px;
         }
-
         .single-line-header {
             font-size: 24px;
             text-align: center;
-
         }
     </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="logo_square.png" alt="Not Rubbish Robotics Logo">
+        <h1>(Not) Rubbish Robotics</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="instructions.html">Instructions</a>
+        </nav>
+    </header>
 
+    <section>
+        <h1 class="single-line-header">Welcome to the Instructions page for (Not) Rubbish Robotics</h1>
+
+        <p>Lorem ipsum dolor sit amet...</p> <!-- Your content goes here -->
+
+        <p>Access our instructions pdf: <button onclick="window.open('./washingmachine_mans/WM_M1.pdf', '_blank')">Open PDF Manual</button></p>
+    </section>
 </head>
 <body>
     <h1>Manual</h1>
