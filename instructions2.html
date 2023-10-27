@@ -3,29 +3,6 @@
 <head>
     <title>Not Rubbish Robotics</title>
     <style>
-
-
-        .dropdown {
-            position: fixed;
-            right: 10px;
-            top: 10px;
-            z-index: 1;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            padding: 12px;
-            border: 1px solid #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
         body {
             background-color: #db641c; /* Orange color */
             color: #000; /* Black text */
@@ -93,27 +70,27 @@
 
         }
     </style>
-
 </head>
 <body>
-    <h1>Document Title</h1>
-    
-    <div class="dropdown">
-        <span>Sections</span>
-        <div class="dropdown-content">
-            <a href="#section1">Section 1</a>
-            <a href="#section2">Section 2</a>
-            <a href="#section3">Section 3</a>
-        </div>
-    </div>
+    <header>
+        <img class="logo" src="logo_square.png" alt="Not Rubbish Robotics Logo">
+        <h1>(Not) Rubbish Robotics</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="instructions.html">Instructions</a>
+        </nav>
+    </header>
 
-    <h2 id="section1">Section 1</h2>
-    <p>Content of section 1 goes here.</p>
+    <section>
+        <h1 class="single-line-header">Welcome to the Instructions page for (Not) Rubbish Robotics</h1>
 
-    <h2 id="section2">Section 2</h2>
-    <p>Content of section 2 goes here.</p>
+        <p>Explore our resources for salvaging motors from discarded printers:</p>
 
-    <h2 id="section3">Section 3</h2>
-    <p>Content of section 3 goes here.</p>
+<!-- <p>Don't know what your e-waste is? Use our <button onclick="window.open('flowchart/characterisation_flowchart_example.jpg', '_blank')">Characterisation Flowchart</button>.</p> -->
+
+<!-- <p>Or, visit our <button onclick="location.href='flowchart_page.html'">Characterisation Flowchart Page</button> to learn more.</p> -->
+
+        <p>Access our instructions pdf: <button onclick="window.open('./washingmachine_mans/WM_M1.pdf', '_blank')">Open PDF Manual</button></p>
+    </section>
 </body>
 </html>
