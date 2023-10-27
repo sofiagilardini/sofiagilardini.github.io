@@ -34,19 +34,19 @@
             text-decoration: underline;
         }
         .dropdown {
-            position: fixed;
-            right: 30px;
-            top: 30px;
+            position: absolute;
+            right: 10px; /* Adjust the right position */
+            top: 25%; /* Adjust the vertical position */
             z-index: 1;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: right; /* Align the text with the right margin */
         }
         .dropdown-content {
             display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            padding: 12px;
-            border: 1px solid #ddd;
         }
         .dropdown:hover .dropdown-content {
             display: block;
