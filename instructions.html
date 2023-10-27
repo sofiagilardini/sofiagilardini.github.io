@@ -7,7 +7,7 @@
             background-color: #db641c; /* Orange color */
             color: #000; /* Black text */
             font-family: 'Inter', sans-serif; /* Use 'Inter' or a suitable font */
-            margin-left: 20px;
+            margin-left: 50px;
             margin-right: 0;
             padding: 0;
             text-align: center;
@@ -35,9 +35,11 @@
             text-decoration: underline;
         }
         .dropdown {
-            position: relative;
+            position: absolute;
+            left: 0; /* Adjust the left property as needed to position it in the left margin */
             display: inline-block; /* Optional - keeps the span element inline */
-        }
+}
+
 
         .dropdown-content {
             display: none;
@@ -48,7 +50,6 @@
             padding: 12px;
             border: 1px solid #ddd;
             top: 100%; /* This moves the dropdown content below the top-level menu item */
-            left: 100%; /* Align with the left side of the top-level menu item */
         }
         .dropdown:hover .dropdown-content {
             display: block;
