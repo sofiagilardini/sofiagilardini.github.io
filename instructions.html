@@ -158,12 +158,24 @@
         .section-list a:hover,
         .section-list a:active {
             color: black;
-            text-decoration: underline;
+            text-decoration: none;
 
         }
 
         html {
             scroll-behavior: smooth;
+        }
+
+        button.download-button {
+            background-color: #db641c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 18px;
+            display: block;
+            margin: 20px auto;
         }
 
         a:hover {
@@ -208,21 +220,23 @@
     </header>
 
     <div class="flex-container ">
- 
         <div class="section-list">
             <div class=" js-sticky-widget ">
-                <a href="washingmachine_mans/ewastemanual.pdf" target="_blank" style="text-align: left;">Download Full Manual</a>
-                <h1 style="text-align: left;">Contents</h1>                <div class="section-list-flex ">
+                <a href="washingmachine_mans/ewastemanual.pdf" target="_blank" style="text-align: left;">Download Full Manual test</a>
+                <h1 style="text-align: left;">Contents</h1>
+                <div class="section-list-flex ">
                     <a href="manual1.html" target="pdf-iframe">Health and Safety</a>
                     <a href="manual2.html" target="pdf-iframe">Printer Disassembly</a>
                     <a href="manual3.html" target="pdf-iframe">E-Waste Characterisation</a>
                 </div>
+                <button class="download-button">
+                    <a href="washingmachine_mans/ewastemanual.pdf" download>Download the Full PDF</a>
+                </button>
             </div>
         </div>
-    
-    <iframe src="washingmachine_mans/ewastemanual.pdf" width="80%" height="500px"></iframe>
-
-
+        <iframe src="washingmachine_mans/ewastemanual.pdf" width="80%" height="500px"></iframe>
+    </div>
+</body>
 </body>
 
 </html>
