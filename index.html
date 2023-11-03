@@ -70,71 +70,47 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="instructions.html">Instructions</a>
+            <a href="thejourney.html">The Journey</a>
+
         </nav>
     </header>
 
     <section>
         <h2>Welcomer to (Not) Rubbish Robotics</h2>
         <p>We're a team of engineers from the University of Edinburgh: with a mission to build fully functioning robotic arms out of e-waste</p>
-        <p>Many developing countries are litered with reusable e-waste,    Our goal is to inspire students in developing countries to harness e-waste to produce useful technology. We want to provide them with the knowledge and guidance needed to construct a robotic arm out of components that are generally discarded</p>
+        <p> (Not) Rubbish Robotics is a team of passionate engineers from The University of Edinburgh dedicated to reshaping the landscape of education and innovation. We're on a mission to harness the untapped potential of electronic waste (e-waste) and use it as a catalyst for transformative change in the field of STEM education. Our diverse team brings together skills in robotics, mechanical and electrical engineering to create a sustainable solution that empowers students and communities in Sub-Saharan Africa and beyond.
+        </p>
         <img src="./photos_slideshow/selfie_printer_1.jpg" alt="Selfie with Printer">
 
+    </section>
+
+    <section>
+        <h2>Our Mission</h2>
+        <p> At (Not) Rubbish Robotics, our mission is clear: to revolutionize STEM education by repurposing discarded e-waste into functional robots. We're committed to tackling the challenges faced by students in developing countries, where access to quality education can be limited. Our goal is to make STEM education more accessible, hands-on, and engaging, ultimately contributing to improved social mobility and innovation.
+        <p>
+        <img src="./photos_slideshow/selfie_printer_1.jpg" alt="Selfie with Printer"  width = 70% height = 70% >
 
     </section>
+
 
     <section>
         <h2>The Journey</h2>
         <p>We decided we wanted to build robots out of one type of e-waste. We decided to build the robot out of printers, given their ubiquity and reliable motors.</p>
-        <p>We got together and took apart 5 printers to figure out what kind of e-waste we could find in them. We found various motors (DC, Steppers), electromagnets, gears, belts, and a lot of screws.</p>
+        <p>We got together and took apart 5 printers to figure out what kind of e-waste we could find in them. We found various motors (DC, Steppers), electromagnets, gears, belts, and a lot of springs and screws.</p>
         <p>We found a DC motor configuration that was present in 4 out of the 5 printers we dissasembled, and used this configuration to inform the design of our robotic arm </p>
     </section>
 
-    
 
     <section>
-        <h2>What we have achieved</h2>
-        <p>We have designed a robot made completely out of e-waste: including an analogue controller using wires and buttons from the printer; capable of performing pick-and-place operations</p>
-        <img src="./photos_slideshow/printer_motor_1.jpg" alt="Selfie with Printer">
-    </section>
-
-    <section>
-        <h2>Instructions</h2>
-        <p>Head to our instructions page to find out more about how you can build your own! </p>
+        <h2>Educational Package</h2>
+        <p> Our educational package includes a parametric CAD model that allows users to customize their robot designs according to motor dimensions, a comprehensive manual that guides students through the entire disassembly and manufacturing journey, and open-source code for controlling the robot.
+        <p>
+        <p>Head to our instructions page to find out how you can build your own!</p>
         <p>You will find instructions on how to disassemble a printer, characterise the e-waste, manufacture your robot and control it buttons from your printer or an arduino and code!</p>
-        <!-- <img src="./photos_slideshow/printer_motor_1.jpg" alt="Image 1 Description"> -->
+        <img src="./photos_slideshow/image7.png" alt="printer_teardown" width = 20% height = 20%>
+        <img src="./photos_slideshow/image42.png" alt="inverse kinematics" width = 20% height = 20%>
+
     </section>
 
-
-    <div class="slideshow-container">
-        <img class="slideshow-image" src="./photos_slideshow/group_selfie_bayes.jpg" alt="Image 2 Description" width="35%" height="50%">
-        <img class="slideshow-image" src="./photos_slideshow/printer_motor_1.jpg" alt="Image 3 Description" width="35%" height="40%">
-        <img class="slideshow-image" src="./photos_slideshow/selfie_bayes_1.jpg" alt="Image 3 Description" width="35%" height="40%">
-        <img class="slideshow-image" src="./photos_slideshow/selfie_printer_1.jpg" alt="Image 3 Description" width="35%" height="40%">
-
-    </div>
-
-    <!-- JavaScript for the slideshow-->
-    <script>
-        let slideIndex = 0;
-
-        function showSlides() {
-            let i;
-            const slides = document.getElementsByClassName("slideshow-image");
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
-            }
-
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 3000);
-        }
-
-        showSlides();
-    </script>
 </body>
 </html>
