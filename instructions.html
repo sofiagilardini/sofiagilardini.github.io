@@ -8,7 +8,7 @@
     <title>Not Rubbish Robotics</title>
 
     <style>
-        body {
+  body {
             background-color: #db641c;
             color: #000;
             font-family: 'Roboto', sans-serif;
@@ -45,34 +45,23 @@
             text-decoration: underline;
         }
 
-        .dropdown {
+        .slideshow-container {
             position: relative;
-            left: 0;
-            display: inline-block;
+            max-width: 100%;
+            margin: 20px auto;
         }
 
-
-        .dropdown-content {
+        .slideshow-image {
             display: none;
-            position: absolute;
-            background-color: #db641c;
-            color: #000;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            padding: 12px;
-            border: 1px solid #ddd;
-            top: 100%;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
+            max-width: 100%;
+            height: auto;
         }
 
         section {
             max-width: 95%; 
             margin: 0 auto;
             padding: 20px;
-            text-align: left;
+            text-align: left; 
         }
 
         section h2 {
@@ -81,8 +70,8 @@
         }
 
         section p {
-            font-size: 18px;
-            margin: 20px 0;
+            font-size: 16px;
+            margin: 10px 0; /* Add some space between paragraphs for readability */
         }
 
         img {
@@ -92,109 +81,19 @@
             margin: 20px auto;
         }
 
-        .button-wrapper {
-            display: flex;
-            justify-content: center;
-        }
-
-
-        button a {
-            text-decoration: none;
-        }
-
-        .single-line-header {
-            font-size: 24px;
-            text-align: center;
-        }
-
-        .main-content {
-            text-align: left;
-        }
-        iframe {
-            display: block;
-            margin: 0 auto;
-            }
-
-    
-
-        .flex-container {
-            display: flex;
-            flex-direction: row;
-            padding: 10px;
-
-        }
-
-        .section-list {
-            position: -webkit-sticky;
-            position: sticky;
-            top: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            min-width: 15%;
-        }
-
-        .section-list-flex {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            gap: 0.5rem;
-
-
-        }
-
-        .section-list h1 {
-        font-size: 20px;
-    }
-
-        .section-list a,
-        .section-list a:visited,
-        .section-list a:hover,
-        .section-list a:active {
-            color: black;
-            text-decoration: none;
-
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-       
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .section-list-flex a[href="pdfs/ewastemanual.pdf"] {
-            font-weight: bold;
-        }
-
-        @media screen and (max-width: 768px) {
-            .flex-container {
-                flex-direction: column;
-            }
-
-            .section-list {
-                width: 100%;
-            }
-
-            .title{
-                font-size: 1rem;
-            }
-
-            header{
-                margin-left: 0px;
-                margin-top: 0px;
-            }
-
-            body{
-                margin-left: 0px;
-            }
-        }
     </style>
-    <script src="https://cdn.jsdelivr.net/npm/sticksy/dist/sticksy.min.js"></script>
-    
+</head>
+<body>
+    <header>
+        <img class="logo" src="logo_square.png" alt="Not Rubbish Robotics Logo">
+        <h1>(Not) Rubbish Robotics</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="instructions.html">Educational Package</a>
+            <!-- <a href="thejourney.html">The Journey</a> -->
+
+        </nav>
+    </header>
 </head>
 
 <body>
