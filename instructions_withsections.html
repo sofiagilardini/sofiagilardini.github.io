@@ -8,7 +8,7 @@
             background-color: #db641c;
             color: #000;
             font-family: 'Inter', sans-serif;
-            margin-left: 0px;
+            margin-left: 80px;
             margin-right: 0;
             padding: 0;
             text-align: center;
@@ -108,12 +108,7 @@
         .main-content {
             text-align: left;
         }
-        iframe {
-            display: block;
-            margin: 0 auto;
-            }
 
-    
 
         .flex-container {
             display: flex;
@@ -217,6 +212,20 @@
     </header>
 
     <div class="flex-container ">
+        <div class="section-list">
+            <div class=" js-sticky-widget ">
+                <h1 style="text-align: left;">Contents</h1>
+                <div class="section-list-flex ">
+                    <a href="pdfs/h_and_s.pdf" target="pdf-iframe">Health and Safety</a>
+                    <a href="pdfs/disassembly.pdf" target="pdf-iframe">Printer Disassembly</a>
+                    <a href="pdfs/e_waste_class.pdf" target="pdf-iframe">E-Waste Characterisation</a>
+                    <a href="pdfs/manufacture.pdf" target="pdf-iframe">Manufacture</a>
+                    <a href="pdfs/program.pdf" target="pdf-iframe">Program</a>
+                    <a href="pdfs/" download>Download the Full PDF</a>
+                    <button class="button" onclick="window.location.href='index.html'">Back</button>
+                </div>
+            </div>
+        </div>
         <iframe src="pdfs/ewastemanual.pdf" width="80%" height="500px"></iframe>
     </div>
 </body>
