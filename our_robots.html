@@ -4,76 +4,116 @@
     <title>Not Rubbish Robotics</title>
     <style>
         body {
-            background-color: #db641c; /* Orange color */
-            color: #000; /* Black text */
-            font-family: 'Inter', sans-serif; /* Use 'Inter' or a suitable font */
+            background-color: #db641c;
+            color: #000;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            text-align: center;
         }
+    
         header {
-            background-color: #000; /* Black header background */
-            color: #f3f0e7; /* Orange header text */
+            background-color: #000;
+            color: #f3f0e7;
             padding: 20px 0;
             text-align: center;
         }
+    
         .logo {
-            max-width: 200px; /* Adjust the size as needed */
+            max-width: 200px;
+            display: block;
+            margin: 0 auto;
         }
+    
         nav {
-            background-color: #000; /* Black menu background */
+            background-color: #000;
         }
+    
         nav a {
             text-decoration: none;
-            color: #db641c; /* Orange menu text */
+            color: #db641c;
             margin: 15px;
             font-weight: bold;
         }
+    
         nav a:hover {
             text-decoration: underline;
         }
+    
         .slideshow-container {
             position: relative;
             max-width: 100%;
-            margin: 20px auto 20px;
+            margin: 20px auto;
         }
+    
         .slideshow-image {
             display: none;
             max-width: 100%;
             height: auto;
         }
+    
         section {
-            max-width: 800px;
+            max-width: 95%; 
             margin: 0 auto;
             padding: 20px;
+            text-align: left; 
         }
+    
         section h2 {
             font-size: 24px;
             text-align: center;
-
-    
         }
+    
         section p {
-        font-size: 18px;
-        margin: 10px 0; 
-    }
+            font-size: 18px;
+            margin: 10px 0; 
+        }
+    
         img {
             max-width: 100%;
             height: auto;
             display: block;
             margin: 20px auto;
         }
+    
+        button.download-button {
+            background-color: #FFAE42;
+            color: #fff; 
+            border: none; 
+            border-radius: 5px; 
+            padding: 12px 24px; 
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s; 
+            }
+    
+        button.download-button a {
+            text-decoration: none;
+            color: inherit; 
+        }
+    
+        button.download-button:hover {
+            background-color: #ff9500; 
+        }
+    
+        .button-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        }
+    
+        .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+        }
 
-    .video-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh; 
-    }
-
-    iframe {
-      width: 420px;
-      height: 315px; 
-    }
+        iframe {
+        width: 420px;
+        height: 315px; 
+        }
     </style>
 </head>
 <body>
@@ -91,11 +131,14 @@
     <section>
         <h2>Our Robots</h2>
         <p>We decided that our robots will be built out of one type of e-waste, to ensure we are able to provide comprehensive e-waste disassembly instructions</p>
-        <p>Our team procured and took apart 3 discarded printer-scanner assemblies to figure out what kind of electronic parts we could find in them. We found various motors (DC, Steppers), electromagnets, gears, belts, and a lot of springs and screws.</p>
+        <p>Our team procured and took apart 3 discarded printer-scanner assemblies to figure out what kind of electronic parts we could find in them. We found various motors (DC, steppers), electromagnets, gears, belts, and a lot of springs and screws.</p>
         <p>We found a DC motor configuration that was present in 4 out of the 5 printers we dissasembled, and used this configuration to inform the design of our robotic arm </p>
-    </section> 
 
-    <section>
+    
+       <div class="video-container">
+        <iframe width="900" height="600" src="https://www.youtube.com/embed/FSpDWjutsh0?autoplay=1&mute=1" frameborder="0"></iframe>
+      </div>
+
         <p>This was our first prototype robot, that we built in order to design our manual. </p> 
         <p>Every part in this robot is built out of the first printer-scanner we found: the DC motor and gears are from the scanner, the linkages are from the plastic casing of the printer, and
        the screws are the screws that held together our e-waste printer!</p> 
@@ -104,17 +147,13 @@
 
     </section> 
 
-    
-    <div class="video-container">
-        <iframe width="900" height="600" src="https://www.youtube.com/embed/FSpDWjutsh0?autoplay=1&mute=1" frameborder="0"></iframe>
-      </div>
       
 
 
-    <div class="slideshow-container">
+    <!-- <div class="slideshow-container">
         <img class="slideshow-image" src="./photos_slideshow/printer_motor_1.jpg" alt="Image 3 Description" width="35%" height="40%">
         <img class="slideshow-image" src="./photos_slideshow/selfie_printer_1.jpg" alt="Image 3 Description" width="35%" height="40%">
-    </div>
+    </div> -->
 
     <!-- JavaScript for the slideshow
     <script>
