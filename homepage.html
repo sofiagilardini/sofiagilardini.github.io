@@ -77,6 +77,21 @@
             margin: 20px auto;
         }
 
+        body {
+            position: relative;
+            margin-bottom: 60px; /* Adjust this value based on the height of your footer */
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            display: none; /* Initially hide the footer */
+        }
+
     </style>
 </head>
 <body>
@@ -107,7 +122,24 @@
 
     </section>
 
+    <footer id="site-footer">
+        Website designed by Sofia Gilardini
+    </footer>
 
+    <script>
+        // Show the footer when scrolling to the bottom
+        window.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY;
+            var windowHeight = window.innerHeight;
+            var bodyHeight = document.body.offsetHeight;
+
+            if (scrollPosition + windowHeight >= bodyHeight) {
+                document.getElementById('site-footer').style.display = 'block';
+            } else {
+                document.getElementById('site-footer').style.display = 'none';
+            }
+        });
+    </script>
 
 
 </body>
